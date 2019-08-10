@@ -1,0 +1,20 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long  u;
+int main()
+{
+    u price,dis,temp;
+    cin>>price>>dis;
+    u ans=price;
+    while(1)
+    {
+        temp=(price*dis)/100;
+        if (temp==0)
+        {
+            break;
+        }
+    price-=temp;
+    ans+=price;
+    }
+    cout<<ans<<'\n';
+}
